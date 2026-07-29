@@ -1,12 +1,12 @@
 ---
-name: adc-architecture
-description: Documents the ADC full-stack microservice architecture (Vue 3 MicroApp, Hyperf 3.1, Nacos, Redis, RabbitMQ, Xxl-Job, MySQL, Nginx/k8s). Use when the user explicitly invokes this skill or asks about ADC project architecture, tech stack, middleware, or deployment.
+name: sunny-architecture
+description: Documents the SUNNY full-stack microservice architecture (Vue 3 MicroApp, Hyperf 3.1, Nacos, Redis, RabbitMQ, Xxl-Job, MySQL, Nginx/k8s). Use when the user explicitly invokes this skill or asks about sunny project architecture, tech stack, middleware, or deployment.
 disable-model-invocation: true
 ---
 
-# ADC 项目架构
+# sunny 项目架构
 
-ADC 采用前后端分离的微服务架构，功能均通过接口交互。部分规划中的技术可能尚未投入使用。
+sunny 采用前后端分离的微服务架构，功能均通过接口交互。部分规划中的技术可能尚未投入使用。
 
 详细原文见仓库根目录 `merchant-settle-apply-api.md`。架构图见同文档引用的 `images/construct.png`、`images/node_simple.png`、`images/nodes.png`。
 
@@ -67,6 +67,6 @@ ADC 采用前后端分离的微服务架构，功能均通过接口交互。部�
 回答架构相关问题时：
 
 1. 以本 skill 的选型与版本为准；不确定是否已落地时，标明「规划中可能未投入使用」。
-2. 为本仓库（`adc-merchant`）写代码时，后端默认 **PHP 8.3 + Hyperf 3.1**；Redis key / 队列 / 任务 / 日志使用服务前缀隔离（见 `CLAUDE.md` 中 `APP_NAME=merchant`）。
+2. 为本仓库（`sunny-merchant`）写代码时，后端默认 **PHP 8.3 + Hyperf 3.1**；Redis key / 队列 / 任务 / 日志使用服务前缀隔离（见 `CLAUDE.md` 中 `APP_NAME=merchant`）。
 3. 不要假设 Apache、非 Linux 生产环境，或跨服务共享无前缀的 Redis key。
 4. 需要更完整原文或配图说明时，读取 `merchant-settle-apply-api.md`。
