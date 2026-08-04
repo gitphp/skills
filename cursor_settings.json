@@ -16,11 +16,14 @@
   "git.confirmSync": false,
   "git.enableSmartCommit": true,
   "update.channel": "none",
+  // 关闭后台静默自动更新。
   "update.enableWindowsBackgroundUpdates": false,
+  // 更新完成后，不自动打开更新日志页面。
   "update.showReleaseNotes": false,
+  // 启用窗口顶部「命令中心」（新版 UI）
   "window.commandCenter": true,
+  // 远程 SSH/WSL 开发端口自动转发策略 常用 WSL、云服务器 SSH 
   "remote.autoForwardPortsSource": "hybrid",
-
   // 项目使用windows下的WSL开发配置
   "remote.SSH.remotePlatform": {
     "wsl": "linux"
